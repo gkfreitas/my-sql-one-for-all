@@ -5,4 +5,3 @@ FROM
         JOIN
     SpotifyClone.user u ON uh.user_id = u.id
         AND u.name = 'Barbara Liskov'
-
