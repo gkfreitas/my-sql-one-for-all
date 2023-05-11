@@ -7,7 +7,7 @@ USE SpotifyClone ;
 CREATE TABLE IF NOT EXISTS SpotifyClone.`plans` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `type` VARCHAR(45) NOT NULL,
-  `value` VARCHAR(45) NOT NULL,
+  `value` DECIMAL(7,2) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -117,7 +117,7 @@ ENGINE = InnoDB;
 
 INSERT INTO SpotifyClone.plans (type, value)
 VALUES
-  ('gratuito', 0),
+  ('gratuito', 0.00),
   ('familiar', 7.99),
   ('universitário', 5.99),
   ('pessoal', 6.99);
